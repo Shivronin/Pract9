@@ -10,30 +10,37 @@
         android:id="@+id/textView"
         android:layout_width="191dp"
         android:layout_height="31dp"
-        android:text='Приют "Надежда"'
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Кого ты себе хочешь взять?"
+        android:layout_marginTop="88dp"
+        android:text="@string/who"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выбери одну категорию питомца"
+        android:layout_marginTop="28dp"
+        android:text="@string/take_one"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="130dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
@@ -51,31 +58,40 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Собаки"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/dog"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Попугаи"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/popug_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Хомяки"
+        android:layout_marginTop="5dp"
+        android:text="@string/xom9k_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -84,44 +100,63 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="212dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="31dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="213dp" />
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="380dp"
-        tools:srcCompat="@drawable/xom9k_layer" />
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/homa"
+        android:src="@drawable/xom9k_layer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="380dp"
-        tools:srcCompat="@drawable/popug_layer" />
+        android:layout_marginStart="60dp"
+        android:contentDescription="@string/popug"
+        android:src="@drawable/popug_layer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="ImageContrastCheck" />
 
     <RadioButton
         android:id="@+id/radioButton4"
         android:layout_width="31dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="380dp" />
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <RadioButton
         android:id="@+id/radioButton3"
         android:layout_width="31dp"
         android:layout_height="37dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="380dp" />
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -131,13 +166,26 @@
         android:contentDescription="@string/cat"
         app:layout_constraintStart_toEndOf="@+id/radioButton"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/cat_layer" />
+        android:src="@drawable/cat_layer" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        tools:layout_editor_absoluteX="224dp"
-        tools:layout_editor_absoluteY="213dp"
-        tools:srcCompat="@drawable/dog_layer" />
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        android:src="@drawable/dog_layer"
+        android:contentDescription="@string/dog_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="564dp"
+        android:text="@string/result_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

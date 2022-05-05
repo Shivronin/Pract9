@@ -2,4 +2,14 @@
     <string name="app_name">Pract9</string>
     <string name="cat">TODO</string>
     <string name="cat_text">Кошки</string>
+    <string name="Name">Приют Надежда</string>
+    <string name="who">Кого ты себе хочешь взять?</string>
+    <string name="take_one">Выбери одну категорию питомца</string>
+    <string name="dog">Собаки</string>
+    <string name="popug_text">Попугаи</string>
+    <string name="xom9k_text">Хомяки</string>
+    <string name="homa">TODO</string>
+    <string name="popug">TODO</string>
+    <string name="dog_text">TODO</string>
+    <string name="result_btn">Показать результаты</string>
 </resources>
